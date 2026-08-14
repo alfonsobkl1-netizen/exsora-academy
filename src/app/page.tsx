@@ -38,12 +38,12 @@ export default function Home() {
               </>
             ) : (
               <>
-                <Link href="/login" className="hover:text-exsora-lime">
+               <Link href="/auth/login" className="hover:text-exsora-lime">
                   Connexion
                 </Link>
-                <Link href="/signup" className="btn-accent">
+                <Link href="/auth/signup" className="btn-accent">
                   S'inscrire
-                </Link>
+                </Link>s
               </>
             )}
           </div>
@@ -67,7 +67,7 @@ export default function Home() {
               Découvrir les formations
             </Link>
             {!user && (
-              <Link href="/signup" className="inline-block px-6 py-3 border border-white rounded hover:bg-white/10">
+              <Link href="/auth/signup className="inline-block px-6 py-3 border...">
                 Commencer gratuit
               </Link>
             )}
@@ -110,7 +110,7 @@ export default function Home() {
             Inscrivez-vous et commencez votre premier module gratuit.
           </p>
           {!user ? (
-            <Link href="/signup" className="btn-accent inline-block">
+            <Link href="/auth/signup className="btn-accent inline-block">
               Créer mon compte
             </Link>
           ) : (
