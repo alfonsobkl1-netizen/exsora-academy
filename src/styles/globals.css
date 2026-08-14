@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #ede8e0;
+  color: #1a1a1a;
+}
+
+/* Utility classes pour le design EXSORA */
+.bg-nav {
+  @apply bg-exsora-dark;
+}
+
+.text-primary {
+  @apply text-exsora-black;
+}
+
+.text-secondary {
+  @apply text-exsora-gray;
+}
+
+.btn-primary {
+  @apply bg-exsora-blue text-white px-4 py-2 rounded font-medium hover:bg-exsora-blue/90 transition;
+}
+
+.btn-accent {
+  @apply bg-exsora-lime text-exsora-dark px-4 py-2 rounded font-medium hover:bg-exsora-lime/90 transition;
+}
+
+.rich-content h1 {
+  @apply text-3xl font-serif font-bold mt-6 mb-4 text-exsora-black;
+}
+
+.rich-content h2 {
+  @apply text-2xl font-serif font-bold mt-5 mb-3 text-exsora-black;
+}
+
+.rich-content h3 {
+  @apply text-xl font-serif font-bold mt-4 mb-2 text-exsora-black;
+}
+
+.rich-content h4 {
+  @apply text-lg font-serif font-bold mt-3 mb-2 text-exsora-black;
+}
+
+.rich-content p {
+  @apply mb-3 leading-relaxed text-exsora-gray;
+}
+
+.rich-content ul,
+.rich-content ol {
+  @apply ml-6 mb-3;
+}
+
+.rich-content li {
+  @apply mb-2 text-exsora-gray;
+}
+
+.rich-content strong {
+  @apply font-bold text-exsora-black;
+}
+
+.rich-content em {
+  @apply italic text-exsora-gray;
+}
+
+.rich-content table {
+  @apply w-full border-collapse my-4 border border-exsora-gray;
+}
+
+.rich-content th,
+.rich-content td {
+  @apply border border-exsora-gray p-3 text-left;
+}
+
+.rich-content th {
+  @apply bg-exsora-blue text-white font-bold;
+}
+
+.quiz-answer {
+  @apply mb-3 p-3 border border-exsora-gray rounded cursor-pointer hover:bg-exsora-cream/50 transition;
+}
+
+.quiz-answer.selected {
+  @apply border-exsora-lime bg-exsora-lime/10;
+}
+
+.quiz-answer.correct {
+  @apply border-green-500 bg-green-50;
+}
+
+.quiz-answer.incorrect {
+  @apply border-red-500 bg-red-50;
+}
