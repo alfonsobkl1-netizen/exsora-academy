@@ -110,7 +110,7 @@ export default function Home() {
             Inscrivez-vous et commencez votre premier module gratuit.
           </p>
           {!user ? (
-            <Link href="/auth/signup className="btn-accent inline-block">
+            <Link href="/auth/signup" className="btn-accent inline-block">
               Créer mon compte
             </Link>
           ) : (
