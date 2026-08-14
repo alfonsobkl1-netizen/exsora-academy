@@ -43,7 +43,7 @@ export default function Home() {
                 </Link>
                 <Link href="/auth/signup" className="btn-accent">
                   S'inscrire
-                </Link>s
+                </Link>
               </>
             )}
           </div>
