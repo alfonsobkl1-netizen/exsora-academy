@@ -67,7 +67,7 @@ export default function Home() {
               Découvrir les formations
             </Link>
             {!user && (
-              <Link href="/auth/signup className="inline-block px-6 py-3 border">
+              <Link href="/auth/signup className="inline-block px-6 py-3 border"/>
                 Commencer gratuit
               </Link>
             )}
